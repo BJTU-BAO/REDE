@@ -66,7 +66,7 @@ class DeepGCN(nn.Module):
         self.relu = nn.ReLU(True)
         self.nrom = nn.BatchNorm1d(nhid)
 
-        self.gate2 = nn.Parameter(torch.tensor([0.5]))
+        self.gate2 = nn.Parameter(torch.tensor([1.9]))
 
         self.edge_diff_matrix = edge_diff_matrix
         self.edge_diff_matrix_high = edge_diff_matrix_high
